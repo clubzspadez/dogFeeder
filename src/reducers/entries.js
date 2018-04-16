@@ -3,7 +3,7 @@ const entriesReducerDefaultState = [];
 export default (state = entriesReducerDefaultState, action) => {
   switch (action.type) {
     case "ADD_ENTRY":
-      return [...state, action.expense];
+      return [...state, action.entry];
     case "REMOVE_ENTRY":
       return state.filter(({ id }) => id !== action.id);
     case "EDIT_ENTRY":

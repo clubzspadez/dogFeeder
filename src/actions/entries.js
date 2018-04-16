@@ -1,12 +1,12 @@
 import uuid from 'uuid';
 
 export const addEntry = ({
-  entry = "",
+  description = "",
   note = "",
   createdAt = 0
  } = {}) => ({
-  type: "ADD_EXPENSE",
-  expense: {
+  type: "ADD_ENTRY",
+  entry: {
     id: uuid(),
     description,
     note,
@@ -16,13 +16,13 @@ export const addEntry = ({
 
 // REMOVE_EXPENSE
 export const removeEntry = ({ id } = {}) => ({
-  type: "REMOVE_EXPENSE",
+  type: "REMOVE_ENTRY",
   id
 });
 
 // EDIT_EXPENSE
 export const editEntry = (id , updates) => ({
-  type: "EDIT_EXPENSE",
+  type: "EDIT_ENTRY",
   id,
   updates
 });
