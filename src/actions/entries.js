@@ -14,13 +14,11 @@ export const addEntry = ({
   }
 });
 
-// REMOVE_EXPENSE
 export const removeEntry = ({ id } = {}) => ({
   type: "REMOVE_ENTRY",
   id
 });
 
-// EDIT_EXPENSE
 export const editEntry = (id , updates) => ({
   type: "EDIT_ENTRY",
   id,
