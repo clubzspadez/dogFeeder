@@ -12,10 +12,11 @@ const store = configureStore();
 
 store.subscribe( ()=> {
   const state = store.getState();
-
+  console.log(state);
 });
 
-store.dispatch(addEntry( { description :'Fed dogs oranges', note: 'Need to refill food', createdAt: 100} ));
+store.dispatch(addEntry( { description : 'Fed dogs oranges', note: 'Need to refill food', createdAt: 100} ));
+store.dispatch(addEntry( { description :'Poop', note: 'Need to refill food', createdAt: 100} ));
 
 const render = (
   <Provider store={store}> 

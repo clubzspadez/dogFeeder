@@ -16,7 +16,7 @@ const Entries = (props) =>{
 
 const mapStateToProps = (state) => {
   return {
-    entries: state.entries
+    entries: state.entry
   }
 }
 export default connect(mapStateToProps)(Entries);

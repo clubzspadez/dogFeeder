@@ -51,33 +51,33 @@ function deleteEntry(){
 }
 */
 
-const feederData = {
-  entries: [],
-  addEntry( { entry = 'Enter an entry' } ){
-    // const now = moment();
-    this.entries.push({
-      entry,
-      completed: false
-    });
+// const feederData = {
+//   entries: [],
+//   addEntry( { entry = 'Enter an entry' } ){
+//     // const now = moment();
+//     this.entries.push({
+//       entry,
+//       completed: false
+//     });
 
-    this.displayEntry();
-  },
+//     this.displayEntry();
+//   },
 
-  displayEntry(){
-    console.log(this.entries);
-  },
+//   displayEntry(){
+//     console.log(this.entries);
+//   },
 
-  modifyEntry(modifiedEntry, index){
-    this.entries[index].entry = modifiedEntry;
-    this.displayEntry();
-  },
+//   modifyEntry(modifiedEntry, index){
+//     this.entries[index].entry = modifiedEntry;
+//     this.displayEntry();
+//   },
 
-  deleteEntry(){
+//   deleteEntry(){
 
-  }
-};
+//   }
+// };
 
-feederData.addEntry({ entry: 'Feed dogs'})
-feederData.displayEntry();
+// feederData.addEntry({ entry: 'Feed dogs'})
+// feederData.displayEntry();
 
 export default App;
